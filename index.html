@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website Saya</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="profile">
+            <img src="profil.jpg" alt="Foto Profil">
+            <div class="profile-info">
+                <p class="profile-name">Paskal V. Punusingon</p>
+                <p class="profile-id">220211060274</p>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="#" class="menu-item" id="dashboard">Dashboard</a></li>
+            <li><a href="#" class="menu-item" id="biodata">Biodata</a></li>
+            <li><a href="#" class="menu-item" id="jadwal">Jadwal</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="dashboard">
+            <div class="dashboard-item dashboard-left">
+                <h2>Jam:</h2>
+                <p id="clock">Loading...</p>
+            </div>
+            <div class="dashboard-item dashboard-right">
+                <h2>Kalender:</h2>
+                <div id="calendar"></div>
+            </div>
+        </div>
+        <div class="biodata" style="display: none;">
+            <div class="biodata-item">
+                <img src="profil.jpg" alt="Foto Profil" id="profile-image">
+            </div>
+            <div class="biodata-item biodata-details">
+                <h2>Biodata:</h2>
+                <p><strong>Nama:</strong> Paskal V. Punusingon</p>
+                <p><strong>Alamat:</strong> Jl. Contoh No. 123</p>
+                <p><strong>Tanggal Lahir:</strong> 01 Januari 2000</p>
+                <!-- Anda dapat menambahkan informasi biodata lainnya sesuai kebutuhan -->
+            </div>
+        </div>
+        <div class="jadwal" style="display: none;">
+            <div class="dashboard-item">
+                <h2>Jadwal:</h2>
+                <table id="jadwal-table">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Mata Kuliah</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Senin</td>
+                            <td>Arsitektur dan Organisasi</td>
+                            <td>15:30 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Senin</td>
+                            <td>Sistem Informasi</td>
+                            <td>15:30 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Selasa</td>
+                            <td>Komputasi Awan</td>
+                            <td>10:30 - 12:10</td>
+                        </tr>
+                        <tr>
+                            <td>Selasa</td>
+                            <td>Struktur Data</td>
+                            <td>13:00 - 15:30</td>
+                        </tr>
+                        <tr>
+                            <td>Rabu</td>
+                            <td>Sistem Operasi</td>
+                            <td>13:00 - 15:30</td>
+                        </tr>
+                        <tr>
+                            <td>Rabu</td>
+                            <td>Rekayasa Perangkat Lunak</td>
+                            <td>15:30 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Kamis</td>
+                            <td>Rekayasa Tertambah dan Rekayasa Maya</td>
+                            <td>08:00 - 09:30</td>
+                        </tr>
+                        <tr>
+                            <td>Kamis</td>
+                            <td>Teknologi Basis Data</td>
+                            <td>15:30 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Jumat</td>
+                            <td>Praktek Teknologi Basis Data</td>
+                            <td>13:00 - 15:30</td>
+                        </tr>
+                        <!-- Anda dapat menambahkan entri jadwal lainnya di sini -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
